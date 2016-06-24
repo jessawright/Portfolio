@@ -1,3 +1,3 @@
 # Portfolio
-This is the portfolio of a fledgling front end web developer.
+This is the portfolio of a fledgling front end web developer and designer.
 
