@@ -2,7 +2,7 @@
 
 html,
 body {
-  font-size: 90%;
+  font-size: 95%;
   background-color: #f9f9f9;
   width: 100%;
   position: relative;
@@ -54,15 +54,20 @@ div {
 
 /* Make font respnd to screen size */
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 500px) {
   body {
     font-size: 125%;
   }
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 991px) {
   body {
     font-size: 150%;
+  }
+}
+@media screen and (min-width: 1199px) {
+  body {
+    font-size: 175%;
   }
 }
 
@@ -145,15 +150,7 @@ div {
 
 /* Portfolio Section */
 
-@media screen and (max-width: 768px) {
-  .tags {
-    column-count: 2;
-  }
-  .tags, .info {
-    width: fit-content;
-    max-width: 480px;
-     }
-}
+
 
 .gallery {
   height: 100%;
@@ -178,21 +175,33 @@ div {
 }
 
 .source {
-  margin-top: 10%;
+  margin: 1em 0 1em 0;
 }
 
 .tag {
   list-style: none;
   margin: .25em;
-  font-size: .9em;
-  padding: .25em;
+  font-size: .8em;
+  padding: .25em .4em;
+  border-radius: 4px;
+  border: 2px solid #222222;
   width: fit-content;
+  background-color: #f9f9f9;
+  color: #222222;
 }
 
 .tags {
  padding: 0;
 }
-
+@media screen and (max-width: 767px) {
+  .tag {
+    display: inline-block;
+  }
+  .info, .tags {
+    width: fit-content;
+    max-width: 480px;
+     }
+}
 
 #portfolio a,
 #portfolio a:hover,
