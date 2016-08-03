@@ -162,7 +162,9 @@ div {
   width: 480px;
 }
 
-
+p>a {
+  font-weight: bold;
+}
 
 .gallery-image {
   margin: 4vw auto 4vw auto;
