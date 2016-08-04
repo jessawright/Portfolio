@@ -1,5 +1,7 @@
 /* Global settings */
 
+
+
 html,
 body {
     font-size: 95%;
@@ -7,28 +9,24 @@ body {
     background-image: url(http://res.cloudinary.com/jessawright/image/upload/v1470277376/portfolio/pattern_1.svg);
     width: 100%;
     position: relative;
-    overflow-x: hidden
+    overflow-x: hidden;
+    height: 100%;
+
+    box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-    min-height: fit-content;
-}
-
-body {
-    height: 100%;
-}
 
 h1 {
-    font-size: 2em;
+    font-size: 6em;
 }
 
 h2 {
-    font-size: 1.625em;
+    font-weight: 200;
+    font-size: 2.2em;
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 2em;
 }
 
 p,
@@ -74,31 +72,33 @@ div {
 .container-fluid {
     padding: 0;
     position: relative;
-    height: 100%;
-    min-height: fit-content;
+
     margin: 0;
 }
 
 
 /* Major content sections */
 
+#home {
+    height: 75%;
+}
 #home,
 #about,
 #portfolio,
 #contact {
-    height: 100%;
-    min-height: fit-content;
+    box-sizing:border-box;
     position: relative;
     width: 100%;
-    margin: 0;
+    margin-bottom: 1em;
 }
 
 .page-title {
     background-color: rgba(256, 256, 256, .5);
     color: #222222;
-    margin: 0 auto 0 auto;
+    margin: 1em auto 0 auto;
     width: 94%;
     border-radius: 6px;
+    
 }
 
 
@@ -115,7 +115,7 @@ div {
 .nav>li>a,
 .nav>li>a:link,
 .nav>li>a:visited {
-    padding: .25rem 1rem;
+    padding: .25rem .75rem;
     margin: 0;
     color: #222222;
 }
@@ -130,18 +130,17 @@ div {
 
 /* Home Section */
 
-#home>div {
-    position: relative;
-    top: 25%;
+.title {
+    margin-top: 25%;
 }
 
-#title>h1 {
+.title>h1 {
     padding-bottom: 1%;
     font-size: 6em;
     color: #222222;
 }
 
-#title>h2 {
+.title>h2 {
     font-weight: 200;
     font-size: 2.2em;
     color: #222222;
@@ -151,8 +150,8 @@ div {
 /* Portfolio Section */
 
 .gallery {
-    height: 100%;
-    min-height: fit-content;
+
+
     width: 90%;
     padding: 0;
     margin: 5%;
@@ -249,7 +248,7 @@ p>a {
 
 .social-media {
     margin-top: 5%;
-    width: fit-content;
+    width: 15em;
     padding: 0;
 }
 
